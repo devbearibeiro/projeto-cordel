@@ -1,0 +1,94 @@
+@charset 'UTF-8';
+
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+:root {
+    --font1: verdana, geneva, tahoma, sans-serif;
+    --font2: 'Passion One', cursive;
+    --font3:'Satisfy', cursive;
+
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+html, body {
+    min-height: 100vh;
+    background-color: antiquewhite;
+    font-family: var(--font1);
+}
+
+header {
+    background-color: chocolate;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+padding-top: 50px;
+font-variant: small-caps;
+font-size: 5vw;
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+header a, footer a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--font3);
+    font-size: 3vw;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.normal {
+    background-color: white;
+}
+
+section.imagem {
+    background-color: rgba(0, 0, 0, 0.466);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.411);
+}
+
+section.imagem > p {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.527);
+    padding: 10px;
+    border-radius: 10px;
+    text-shadow: 1px 1px 0px black;
+}
+
+section#papel {
+    background-image: url('imagemCordel/papel.jpg');
+}
+
+section#cordel {
+    background-image: url('imagemCordel/cordel2.jpg');
+    background-position: center;
+   
+}
+footer {
+    background-color: chocolate;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
